@@ -25,6 +25,9 @@ def melon_delivery(file_name):
 
         #add each line to "empty" list (empty in quotes becuase once it gets here once it's not empty anymore)
         prettier_version.append(f'Delivered {count} {melon}s for a total of {amount}.')
+    
+    # closes the file, which I believe is just good practice to close it after you're done using it.
+    the_file.close()
 
     #return the correctly formatted list of melons and prices
     # formatting help from StackOverflow: https://stackoverflow.com/questions/22695171/print-list-elements-line-by-line-is-it-possible-using-format
