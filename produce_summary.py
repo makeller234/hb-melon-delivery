@@ -54,7 +54,7 @@ for one_file in files:
     day += 1
 
 
-## Initial Code
+## Initial Code that has my few edits to call the correct index locations
 
 # print("Day 1")
 # the_file = open("um-deliveries-20140519.txt")
