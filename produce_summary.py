@@ -27,7 +27,9 @@ def melon_delivery(file_name):
         prettier_version.append(f'Delivered {count} {melon}s for a total of {amount}.')
 
     #return the correctly formatted list of melons and prices
-    return prettier_version
+    # formatting help from StackOverflow: https://stackoverflow.com/questions/22695171/print-list-elements-line-by-line-is-it-possible-using-format
+    # towards the bottom, surprisingly 0 upvotes, but it worked for what I needed.
+    return ("\n".join(prettier_version))
 
 #creat a list of all the file names
 files = ['um-deliveries-20140519.txt', 'um-deliveries-20140520.txt', 'um-deliveries-20140521.txt']
